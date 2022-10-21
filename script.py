@@ -40,8 +40,8 @@ def main():
         return 1
 
     if s:
-        ans = input("This action will DELETE ALL the cron tasks of the root user\nView tasks, command: sudo crontab -u root -e")
-        if ans == 'y':
+        ans = input("This action will DELETE ALL the cron tasks of the root user\nView tasks, command: sudo crontab -u root -e\nEnter Y or N: ")
+        if ans.lower() == 'y':
             os.system("sudo crontab -u root -r")
         return 0
 
