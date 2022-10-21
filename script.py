@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 import os
@@ -53,7 +52,7 @@ def main():
     if activate:
         archiver(args.d)
     else:
-        os.system(f"sudo echo -e '*/{args.t} * * * * {BASE_DIR}/script.py -a -d {dir} ' | sudo crontab -")
+        os.system(f"sudo echo -e '* * */{args.t} * * {BASE_DIR}/script.py -a -d {dir} ' | sudo crontab -")
         os.system("sudo service cron start")
         
 
