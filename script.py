@@ -11,7 +11,7 @@ group.add_argument("-a", action="store_true", help="compress now")
 group.add_argument("-u", action="store_true", help="uncompress now")
 parser.add_argument("-s", action="store_true", help="stop cron")
 parser.add_argument("-d", default="/var/log", help="Сhange the directory")
-parser.add_argument("-t", default=30, type=int, help="Change the time after which the script will be activated")
+parser.add_argument("-t", default=30, type=int, help="Change the time after which the script will be activated t = n(day)")
 
 args = parser.parse_args()
 activate = args.a
