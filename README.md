@@ -14,7 +14,7 @@
 
 ## Usage
 usage: script.py [-h] [-a | -u] [-s] [-d D] [-t T]
-- examle: `./script.py -d /var/icons -t 15` (every 15 days the script will archive all files in the /var/icons folder)
+- examle: `./script.py -d /var/mail -t 15` (every 15 days the script will archive all files in the /var/mail folder)
 
 archives in a folder every t=30 days, standard directory: /var/log
 
