@@ -20,8 +20,8 @@ archives in a folder every t=30 days, standard directory: /var/log
 
 optional arguments:
   - -h, --help  show this help message and exit
-  - -a          compress now
-  - -u          uncompress now
+  - -a &ensp compress now
+  - -u &ensp         uncompress now
   - -s          stop cron
   - -d D        Сhange the directory (standart directory == /var/log)
   - -t T        Change the time after which the script will be activated (standart time == 30days)
