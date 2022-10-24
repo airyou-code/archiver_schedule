@@ -22,13 +22,13 @@ dir = args.d
 def archiver(dir="/var/log/"):
     dir_name = dir.split("/")[-1]
     os.chdir("..")
-    os.system(f"gzip -r {dir_name}")
+    os.system(f"gzip -r -f {dir_name}")
     os.chdir(dir_name)
 
 def uncompress(dir="/var/log/"):
     dir_name = dir.split("/")[-1]
     os.chdir("..")
-    os.system(f"gunzip -r {dir_name}")
+    os.system(f"gunzip -r -f {dir_name}")
     os.chdir(dir_name)
 
 def main():
