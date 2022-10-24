@@ -34,9 +34,9 @@ def uncompress(dir="/var/log/"):
 def main():
     os.chdir("/")    
     try:
-        os.chdir(os.path.join(f"{BASE_DIR + dir}"))
+        os.chdir(os.path.join(dir))
     except:
-        print(f"ERROR: Couldn't find the {BASE_DIR + args.d} directory")
+        print(f"ERROR: Couldn't find the {args.d} directory")
         return 1
 
     if s:
